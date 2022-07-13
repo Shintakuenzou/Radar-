@@ -44,3 +44,12 @@ function validate() {
         secondInput.classList.add('invalid')
     }
 }
+
+// Data
+const month = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Auagostoust","Setembro","outubro","Novembro","Dezembro"];
+const d = new Date();
+const data = d.getDate()
+let nome = month[d.getMonth()];
+let year = d.getFullYear()
+
+document.getElementById('data_emissão').innerHTML = `${data} / ${nome} / ${year}`
