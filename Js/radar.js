@@ -51,5 +51,9 @@ const d = new Date();
 const data = d.getDate()
 let nome = month[d.getMonth()];
 let year = d.getFullYear()
+let hour = d.getHours();
+let minutes = d.getMinutes();
 
 document.getElementById('data_emissão').innerHTML = `${data} / ${nome} / ${year}`
+
+document.getElementById('horas').innerHTML = `${hour} : ${minutes}`
