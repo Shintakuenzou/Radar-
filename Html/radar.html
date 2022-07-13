@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../CSS/radar.css">
+</head>
+
+<body class="radar">
+    <h1>Radar de velocidade </h1>
+
+    <form action="" class="container">
+        <div class="content">
+            <label for="velocidadeVia">Velocidade da Via </label>
+            <input type="text" id="velocidadeVia" name="velocidadeVia" placeholder="Km/h" required>
+            <span class="error"></span>
+        </div>
+
+        <div class="content">
+            <label for="velocidadeVeiculo">Velocidade do Veículo </label>
+            <input type="text" id="velocidadeVeiculo" name="velocidadeVeiculo" placeholder="Km/h" required>
+        </div>
+
+
+        <button type="submit" onclick="relatorio()" id="submit">Relatório</button>
+    </form>
+
+
+    <script src="../Js/radar.js">
+    </script>
+</body>
+
+</html>
